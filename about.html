@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Epic Wine | About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-image: url('img/body.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav.navbar {
+      background-color: transparent;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: white;
+      animation: fadeDown 1s ease-out;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      margin-right: 15px;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #ffc107;
+      border-bottom: 2px solid #ffc107;
+    }
+
+    .about-section {
+      padding: 100px 20px 50px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      margin-top: 80px;
+      animation: fadeUp 1.5s ease-out;
+    }
+
+    h1, h3 {
+      animation: slideInLeft 1s ease-out;
+    }
+
+    p {
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* Animations */
+    @keyframes slideInLeft {
+      0% { opacity: 0; transform: translateX(-50px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="indexx.html">Epic Wine</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="indexx.html">Home</a>
+        <a class="nav-link" href="shop.html">Shop</a>
+        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT SECTION -->
+<div class="container about-section mt-5">
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">About Epic Wine</h1>
+    <p class="lead">Where tradition meets innovation — one bottle at a time.</p>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Our Story</h3>
+      <p>
+        Epic Wine was born from a desire to combine classic winemaking artistry with modern health trends.
+        Our wines are infused with natural probiotics, giving you a taste that not only delights but supports a healthy lifestyle.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h3>Why Choose Us?</h3>
+      <p>
+        At Epic Wine, we believe wine should do more than taste good — it should do good. From sustainable vineyards to carefully selected ingredients,
+        our wines are crafted for connoisseurs and health enthusiasts alike.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO SECTION -->
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h1 class="fw-bold text-white" style="animation: slideInLeft 1s ease-out;">How It's Made</h1>
+    <p class="lead text-white" style="animation: fadeIn 2s ease-in;">
+      Discover the craftsmanship and care behind every bottle of Epic Wine.
+    </p>
+  </div>
+  <div class="ratio ratio-16x9" style="border-radius: 15px; overflow: hidden; animation: fadeUp 1.5s ease-out;">
+    <!-- Replace this YouTube link with your own video or use <video> tag for local file -->
+    <iframe 
+      src="https://www.youtube.com/embed/WuDkbi2VO7I" 
+      title="How Epic Wine is Made"
+      allowfullscreen
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white pt-5 pb-4" style="background-color: #222;">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Company</h5>
+        <p><a href="about.html" class="text-white text-decoration-none">About Us</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Our Services</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Affiliate Program</a></p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Get Help</h5>
+        <p><a href="#" class="text-white text-decoration-none">FAQ</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Shipping</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Returns</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Order Status</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Payment Options</a></p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-white">Follow Us</h5>
+        <a href="#" class="text-white me-4" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="text-white me-4" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-white me-4" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
